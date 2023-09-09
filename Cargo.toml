@@ -1,0 +1,21 @@
+[package]
+name = "f1-randomizer"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+
+
+[dependencies.serde]
+version = "1.0.160"
+features = ["derive"]
+
+[dependencies.serde_json]
+version = "1.0.96"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
